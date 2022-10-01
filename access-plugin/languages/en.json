@@ -1,0 +1,16 @@
+{
+    "plugin-data": {
+        "name": "Access Plugin",
+        "description": "Create information for acceptation to your website"
+    },
+    "Title": "Title",
+    "agree-btn": "agree text button",
+    "not-agree-btn": "Not agree text button",
+    "regulations": "Regulations",
+    "showafteraccept": "Show next time after accept?",
+    "disablesource": "disable source shortcut view?",
+    "yes": "yes",
+    "no": "no",
+    "textcolor":"text color",
+    "backgroundcolor":"background"
+}

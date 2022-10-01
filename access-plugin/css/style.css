@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+ 
+
+.accessplugin  {
+  font-family: 'Roboto',sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999999;
+}
+
+.accessplugin .wrapper {
+  width: 50rem;
+  margin: 0 auto;
+  animation: faded 500ms linear;
+}
+
+@media (max-width: 768px) {
+  .accessplugin  .wrapper {
+    width: 90vw;
+  }
+}
+
+.accessplugin h1,
+.accessplugin  h2,
+.accessplugin  h3,
+.accessplugin  h4,
+.accessplugin  h5,
+.accessplugin  h6 {
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.accessplugin .content {
+  height: 40vh;
+  overflow-x: none;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  padding: 10px;
+  padding-top: 0;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  .accessplugin .content {
+    height: 60vh;
+  }
+}
+
+.accessplugin .btn {
+  border: none;
+  border-radius: 0.4rem;
+  padding: 10px 20px;
+  margin-right: 5px;
+  background: green;
+  color: #fff;
+  cursor: pointer;
+}
+
+.accessplugin  .btn-danger {
+  background: red;
+}
+
+/* width */
+.accessplugin .content::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.accessplugin .content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.accessplugin .content::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.accessplugin .content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media (max-width: 768px) {
+  .accessplugin  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@keyframes faded {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+ .fadeout {
+  animation: fadeout 800ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
