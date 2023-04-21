@@ -138,8 +138,8 @@
 
 
         public function siteHead() {
-           echo '<link rel="stylesheet" href="'.DOMAIN.'/bl-plugins/access-plugin/css/style.css">';
-           echo '<script src="'.DOMAIN.'/bl-plugins/access-plugin/js/script.js" defer></script>';
+           echo '<link rel="stylesheet" href="'.DOMAIN_BASE.'/bl-plugins/access-plugin/css/style.css">';
+           echo '<script src="'.DOMAIN_BASE.'/bl-plugins/access-plugin/js/script.js" defer></script>';
         }
 
 

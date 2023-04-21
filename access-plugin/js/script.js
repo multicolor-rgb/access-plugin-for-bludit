@@ -2,12 +2,9 @@ const accept = document.querySelector('.acceptalert');
 const decide = document.querySelector('.decidealert');
 const alert = document.querySelector('.alert');
 
- 
 
-
-
-const alertColor = alert.dataset.color;
-const alertBackground = alert.dataset.background;
+const alertColor = alert.getAttribute('data-color');
+const alertBackground = alert.getAttribute('data-background');
 
 //style
 alert.style.color = alertColor;
@@ -32,7 +29,7 @@ accept.addEventListener('click', () => {
     localStorage.setItem("acceptInfo", "yes");
 
 
- 
+
 });
 
 
@@ -40,7 +37,7 @@ decide.addEventListener('click', () => {
 
     history.back();
 
-    if (history.back()==null) {
+    if (history.back() == null) {
         window.location = "https://google.com/";
     }
 
