@@ -1,6 +1,7 @@
+if(document.querySelector('.alert')!==null){
+    const alert = document.querySelector('.alert');
 const accept = document.querySelector('.acceptalert');
 const decide = document.querySelector('.decidealert');
-const alert = document.querySelector('.alert');
 
 
 const alertColor = alert.getAttribute('data-color');
@@ -42,3 +43,4 @@ decide.addEventListener('click', () => {
     }
 
 })
+}
